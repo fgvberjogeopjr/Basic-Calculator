@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Calculator</title>
+	<style type="text/css">
+		.button{
+			margin-top: 300px;
+			margin-left: 300px;
+			width: 100px;
+			height: 70px;
+			font-size: 30px;
+			color: white;
+			background: blue;
+            border-radius: 20px;
+
+			
+		}
+        .op{
+           width: 100px;
+			height: 70px;
+			font-size: 30px;
+			color: white;
+			background: blue;
+            border-radius: 20px;
+
+
+        }
+        .button:hover{
+        	background: orange;
+        	cursor: pointer;
+        	width: px;
+        	height: px;
+            border-radius: 20px;
+        }
+        .op:hover{
+        	background:  orange;
+            cursor: pointer;
+            width: px;
+        	height: px;
+            border-radius: 20px;
+        }
+        
+        }
+        .main{
+        	margin-top: -700px;
+            margin-left: 300px;        
+       }
+         .lol{
+            width: 700px;
+            height: 70px;
+            margin-top: 70px;
+            background: white;
+            font-size: 30px;
+            box-shadow: 4px 4px 30px rgb(0, 0, 0, 0.3);
+            position: fixed;
+
+         }
+         form{
+            background: ;
+            box-shadow: 4px 4px 30px rgb(0, 0, 0, 0.3);
+
+         }
+        .ph{
+            width: 100%;
+            height: 50px;
+            background: orange;
+            box-shadow: 4px 4px 30px rgb(0, 0, 0, 0.3);
+
+        }
+        
+         
+        h4{
+            
+            background: #efeff2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -40px;
+        }
+        
+	</style>
+	<head>
+        <body>
+        <div class="ph">
+        <h1 style="margin-left: 450px; color: white;">Welcome to CBJ's Calculator</h1>
+        <p></p>
+   </div>
+</head>
+<form name="cal">
+ <input class="lol" name="res" placeholder="0" type="textfield" value="" readonly>
+<div class="main">
+     	  
+	<input class="button" type="button" onclick="document.cal.res.value+=7" value="7">
+    <input class="op" type="button" onclick="document.cal.res.value+=8" value="8">
+     <input class="op" type="button" onclick="document.cal.res.value+=9" value="9">
+     <input class="op" type="reset" style="background: red;" onclick="document.cal.res.value+=''" value="C"><br>
+      <input class="op" type="button" onclick="document.cal.res.value+=4" value="4" style="margin-left: 300px;">
+       <input class="op" type="button" onclick="document.cal.res.value+=5" value="5">
+        <input class="op" type="button" onclick="document.cal.res.value+=6" value="6">
+        <input class="op" type="button" onclick="document.cal.res.value+='*'" value="*"><br>
+        <input class="op" type="button" onclick="document.cal.res.value+=1" value="1" style="margin-left: 300px;">
+        <input class="op" type="button" onclick="document.cal.res.value+=2" value="2">
+        <input class="op" type="button" onclick="document.cal.res.value+=3" value="3">
+        <input class="op" type="button" onclick="document.cal.res.value+='/'" value="/"><br>
+        <input class="op" type="button" onclick="document.cal.res.value+=0" value="0" style="margin-left: 300px;">
+        <input class="op" type="button" onclick="document.cal.res.value+='.'" value=".">
+        <input class="op" type="button" onclick="document.cal.res.value+='+'" value="+">
+        <input class="op" type="button" onclick="document.cal.res.value+='-'" value="-">
+        <input class="op" type="button" id="clears" onclick="document.cal.res.value=eval(document.cal.res.value)" value="=">
+
+</div>
+</form>
+<span></span>
+<span></span>
+<footer>
+     
+    <h4>Developer: <strong>CBJ</strong></h4><br>
+    <p>
+    <h5 style=" display: flex;
+            justify-content: center;
+            align-items: center;"> Contact: +220 7878796</h5>
+</p>
+</footer>
+</body>
+</html>
